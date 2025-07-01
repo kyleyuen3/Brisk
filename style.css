@@ -11,6 +11,20 @@ a {
   text-decoration: none;
 }
 
+/* Card Link Styling */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+  display: block;
+}
+
+.card-link:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(100, 210, 255, 0.3);
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -77,6 +91,7 @@ nav a {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .card h3 {
